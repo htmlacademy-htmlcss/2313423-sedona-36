@@ -35,10 +35,8 @@ html {
   flex-direction: column;
   margin: 0 auto;
   width: 1280px;
-  min-height: 100%;
   padding: 0 40px;
   background-color: #f2f2f2;
-  flex-grow: 1;
 }
 
 body {
@@ -50,12 +48,10 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
 }
 
 .inner-background {
   width: 1200px;
-  min-height: 100%;
   background-color: #ffffff;
 }
 
@@ -457,6 +453,7 @@ body {
 display: flex;
 width: 292px;
 justify-content:flex-end;
+align-items: center;
 margin-left: auto;
 }
 
@@ -469,9 +466,8 @@ margin-left: auto;
 }
 
 .select-control {
-  border-radius: 4px;
-  border: 2px;
-  border-color: #E5E5E5;
+  width: 292px;
+  height: 49px;
 }
 
 .hotels-filter-form {
@@ -496,6 +492,7 @@ margin-left: auto;
 
 .hotel-card {
   margin: 20px;
+  outline: 1px solid rgba(230, 230, 230, 1);
 }
 
 /* Boocking */
@@ -742,7 +739,7 @@ margin-left: auto;
   width: 1200px;
   display: flex;
   justify-content: space-between;
-  padding-left: 80px;
+  padding-left: 70px;
   padding-right: 70px;
 }
 
@@ -787,4 +784,11 @@ margin-left: auto;
 .footer-contacts-logo {
   text-align: right;
   padding: 0;
+}
+
+.inner-main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex-grow: 1;
 }
